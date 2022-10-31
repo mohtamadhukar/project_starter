@@ -7,10 +7,10 @@ import gc
 import pandas as pd
 from joblib import parallel_backend, Parallel, delayed
 
-from project_starter import constants
-from project_starter.config import config
-from project_starter.data import schemas
-from project_starter.data.handlers.common import (
+from project_starter_lib import constants
+from project_starter_lib.config import config
+from project_starter_lib.data import schemas
+from project_starter_lib.data.handlers.common import (
 	StorageHandler,
 )
 

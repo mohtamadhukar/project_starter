@@ -3,7 +3,7 @@
 import logging.config
 import warnings
 
-from project_starter.config.logging_config import LOGGING_CONFIG
+from project_starter_lib.config.logging_config import LOGGING_CONFIG
 
 """ Filter warnings in command line """
 warnings.filterwarnings("ignore")

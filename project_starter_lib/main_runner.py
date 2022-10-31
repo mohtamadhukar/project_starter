@@ -6,13 +6,13 @@ import click
 import logging
 from collections import OrderedDict
 
-from project_starter.config import config
-from project_starter.constants import (
+from project_starter_lib.config import config
+from project_starter_lib.constants import (
 	PIPELINE_INGEST_SOURCE_DATA,
 	PIPELINE_AGG_DATA,
 )
-from project_starter.data.data_stores import AllDataStores, DataStore
-from project_starter.pipelines import (
+from project_starter_lib.data.data_stores import AllDataStores, DataStore
+from project_starter_lib.pipelines import (
 	IngestSourceData,
 	AggData,
 )

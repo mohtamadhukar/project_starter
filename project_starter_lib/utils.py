@@ -10,8 +10,8 @@ import numpy as np
 import pandas as pd
 from joblib import parallel_backend, Parallel, delayed
 
-import project_starter.data.data_stores as data_stores
-from project_starter.config import config
+import project_starter_lib.data.data_stores as data_stores
+from project_starter_lib.config import config
 
 logger = logging.getLogger(__name__)
 

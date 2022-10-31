@@ -1,5 +1,5 @@
 """ Copyright © 2021 by Boston Consulting Group. All rights reserved """
-from project_starter.config import config
+from project_starter_lib.config import config
 
 """ Data schemas for all files associated with the pipeline ingest_source_data"""
 

@@ -10,7 +10,7 @@ import boto3.session
 import pandas as pd
 from dotenv import load_dotenv
 
-from project_starter.data.handlers.common import StorageHandler
+from project_starter_lib.data.handlers.common import StorageHandler
 
 logger = logging.getLogger(__name__)
 

@@ -5,10 +5,10 @@ from datetime import timedelta
 import numpy as np
 import pandas as pd
 
-from project_starter.common import Task
-from project_starter.config import config
-from project_starter.data import schemas
-from project_starter.data.data_stores import DataStore, clean
+from project_starter_lib.common import Task
+from project_starter_lib.config import config
+from project_starter_lib.data import schemas
+from project_starter_lib.data.data_stores import DataStore, clean
 
 logger = logging.getLogger(__name__)
 

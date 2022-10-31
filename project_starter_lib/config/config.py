@@ -10,7 +10,7 @@ import yaml
 from dotenv import load_dotenv
 from envyaml import EnvYAML
 
-from project_starter.data.handlers.s3 import S3StorageHandler
+from project_starter_lib.data.handlers.s3 import S3StorageHandler
 
 logger = logging.getLogger(__name__)
 

@@ -3,16 +3,16 @@
 import logging
 import gc
 
-from project_starter.config import config
-from project_starter import constants
-from project_starter.common import Pipeline
-from project_starter.constants import (
+from project_starter_lib.config import config
+from project_starter_lib import constants
+from project_starter_lib.common import Pipeline
+from project_starter_lib.constants import (
 	TASK_INGEST_FILE,
 	TASK_AGG_FILE
 	)
-from project_starter.tasks.ingest_source_data.ingest_file import IngestFile
-from project_starter.tasks.agg_data.agg_file import AggFile
-from project_starter.utils import decorate_run_pipeline
+from project_starter_lib.tasks.ingest_source_data.ingest_file import IngestFile
+from project_starter_lib.tasks.agg_data.agg_file import AggFile
+from project_starter_lib.utils import decorate_run_pipeline
 
 logger = logging.getLogger(__name__)
 

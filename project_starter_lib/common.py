@@ -4,7 +4,7 @@ from datetime import datetime
 
 import pytz
 
-from project_starter.data.data_stores import AllDataStores
+from project_starter_lib.data.data_stores import AllDataStores
 
 logger = logging.getLogger(__name__)
 
