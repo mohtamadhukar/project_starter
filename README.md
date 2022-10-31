@@ -52,3 +52,7 @@ project_starter/                Root project directory
 ```
 
 
+## References
+https://realpython.com/python-application-layouts/
+https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82
+https://medium.com/bcggamma/welcome-to-the-big-leagues-b9038648054f
