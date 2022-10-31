@@ -37,7 +37,7 @@ cmd_line_pipeline_choices = [
 )
 def cli(pipelines):
 	"""
-    Run gtmarkdown pipelines
+    Run pipelines
     :param pipelines: pipelines which we need to run. Passes using command line
     :return:
     """
