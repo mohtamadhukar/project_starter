@@ -25,7 +25,7 @@ Table of Contents
 
 ### Installing virtualenv and all dependencies
 
-1. Clone the repository, either by creating a [personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), [SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh), or through built-in [IDE GitHub login features](https://www.jetbrains.com/help/pycharm/github.html). (Not required if you already have a zipped version of the repository from the code owner). The `master_gtmarkdownlib` is the most stable branch. 
+1. Clone the repository, either by creating a [personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token), [SSH key](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh), or through built-in [IDE GitHub login features](https://www.jetbrains.com/help/pycharm/github.html). (Not required if you already have a zipped version of the repository from the code owner).
 
 2. Move into the project root directory 
 
@@ -34,7 +34,7 @@ Table of Contents
 
 ## Step 2: Create a `.env` file for storing secret access keys
 
-- Create a new file and name it `.env`. The `.env` file should be located in the `m3/` directory.
+- Create a new file and name it `.env`. The `.env` file should be located in the `project_starter/` directory.
 
 - The environment variables are in the `.env` file and contain the keys for accessing Storage and other resources.
 This file **should not** be committed to the GitHub repository as it contains sensitive information, and should instead
@@ -42,7 +42,7 @@ be received from your project lead.
 
 Environment variable | Description | Example
 --- | --- | ---
-AWS_BUCKET_NAME | AWS Bucket name. | `s3-461832-02-gt-data-transfet-ext`
+AWS_BUCKET_NAME | AWS Bucket name. | `s3-bucket-name`
 AWS_ACCESS_KEY_ID | AWS BUCKET Access Key ID. |  AKBF4ETSO25CZIHMLQOJ
 AWS_SECRET_ACCESS_KEY | AWS Bucker Secret Access Key. | nX2T3iRCcn2RiK4P9rE71DZf0niWC+SLIO6rsDO6
 ROOT_FOLDER_NAME | The root_folder on s3 bucket in which all the output files from the pipeline are created. Please refer to [INFRASTRUCTURE_GUIDE](INFRASTRUCTURE_GUIDE.md) for more details | `dev_<your_name>`
@@ -54,18 +54,18 @@ ROOT_FOLDER_NAME | The root_folder on s3 bucket in which all the output files fr
 
 - Ensure that your current working directory is in the `root` folder i.e. the root directory. `pwd` linux command output on my machine is the following
   ```shell
-  (m3_py_env_prod) ➜  m3 git:(master) pwd
-  /Users/mohtamadhukar/PycharmProjects/m3
+  (venv) ➜  project_starter git:(master) pwd
+  /Users/mohtamadhukar/PycharmProjects/project_starter
   ```
 - Ensure that the virtual environment is activated. 
 
-- Run the command `python -m project_starter.main_runner` from the terminal to run all the pipelines.  
+- Run the command `python -m project_starter_lib.main_runner` from the terminal to run all the pipelines.  
  If you want, you can also setup a Pycharm run configuration. [PyCharm Run Configurations](https://www.jetbrains.com/help/pycharm/creating-and-editing-run-debug-configurations.html)
 
 - If you want to run only specific pipelines, you can provide them as a command line argument. 
   
   Example.
-  `python -m gtmarkdownlib.main_runner -p ingest_source_data -p agg_data`
+  `python -m project_starter_lib.main_runner -p ingest_source_data -p agg_data`
    
   The different pipelines in the system are : 
   - ingest_source_data 
