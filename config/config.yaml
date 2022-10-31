@@ -1,0 +1,22 @@
+# Determines which run_ids to use to read files for each pipeline
+pipeline_read_run_ids:
+  ingest_source_data: latest
+  agg_data: latest
+
+# Determines which tasks to run in each pipeline
+tasks:
+  ingest_source_data:
+    ingest_file: True
+  agg_data:
+    agg_file: True
+
+
+run_configs:
+  run_only_using_notxnskus: False
+  root_folder_name: $ROOT_FOLDER_NAME|dev
+  execution_date: calculated
+
+
+source_data_paths:
+  input_file: 'input_data/sample_input_data.csv'
+

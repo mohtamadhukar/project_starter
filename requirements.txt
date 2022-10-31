@@ -1,0 +1,14 @@
+pytz
+setuptools~=50.3
+versioneer~=0.19
+click~=7.1.2
+s3fs==0.4.2
+python-dotenv~=0.15.0
+boto3
+jedi==0.17.2
+typing
+GitPython==3.1.14
+envyaml==1.9.210927
+markupsafe==2.0.1
+pandas
+joblib
