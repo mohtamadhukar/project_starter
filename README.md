@@ -32,7 +32,7 @@ project_starter/                Root project directory
 ├── requirements.txt            Lists dependencies
 ├── .gitignore                  Files/dirs to git ignore
 ├── .env                        Consists of all access keys and secrets. Is a part of .gitignore
-├── project_starter/            Application code/top level package directory
+├── project_starter_lib/            Application code/top level package directory
     ├── config/                     Logging configs and loads up configuration variables. 
     ├── data/
         ├── handlers/
