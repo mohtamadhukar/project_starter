@@ -16,12 +16,10 @@ Table of Contents
 
 ### Requirements
 
-* Linux based machine (Installing on Windows machine requires a lot of manual efforts to recreate what is happening in `setup.sh`)
-* Python 3.7
+* Python 3.8
 * [Git](https://git-scm.com/downloads) (Not required if not using Git)
 * [PyCharm](https://www.jetbrains.com/pycharm/) or [Visual Studio Code](https://code.visualstudio.com/)
 * Access to Storage, see the [Infrastructure Guide](INFRASTRUCTURE_GUIDE.md)
-* Access to [Github Repo](https://github.gamma.bcg.com/gianttiger/m3), see the [Infrastructure Guide](INFRASTRUCTURE_GUIDE.md) for access (Not required if not using Git)
 
 ### Installing virtualenv and all dependencies
 

@@ -16,7 +16,6 @@ logger = logging.getLogger(__name__)
 
 load_dotenv()
 
-# Also load the config created for M3
 config_path = os.path.abspath('config/config.yaml')
 cfg = EnvYAML(config_path)
 
